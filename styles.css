@@ -37,10 +37,10 @@ audio:not([controls]) {
     height: 0
 }
 
-[hidden],
+/* [hidden],
 template {
     display: none
-}
+} */
 
 a {
     background-color: transparent
@@ -99,7 +99,7 @@ img {
 }
 
 svg:not(:root) {
-    overflow: hidden
+    overflow: scroll;
 }
 
 figure {
@@ -112,7 +112,7 @@ hr {
 }
 
 pre {
-    overflow: auto
+    overflow: scroll;
 }
 
 code,
@@ -196,7 +196,7 @@ legend {
 }
 
 textarea {
-    overflow: auto
+    overflow: scroll;
 }
 
 optgroup {
@@ -212,7 +212,32 @@ td,
 th {
     padding: 0
 }
+.image-8 {
+    position: absolute;
+    width: 1100px;
+    margin-top: -50px;
+    margin-left: 309px;
+}
 
+.image-8:medium {
+    position: static;
+    left: 52.0078px;
+    right: 15.008px;
+    width: 1000px;
+    margin-left: 49px;
+    font-size: 20px;
+}
+
+.image-8:small {
+    width: 600px;
+    margin-left: 73px;
+}
+
+.image-8:tiny {
+    width: 300px;
+    margin-top: -179px;
+    margin-left: 71px;
+}
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
    ========================================================================== */
@@ -313,9 +338,9 @@ html.w-mod-touch * {
     clear: both
 }
 
-.w-hidden {
+/* .w-hidden {
     display: none
-}
+} */
 
 .w-button {
     display: inline-block;
@@ -337,7 +362,7 @@ html[data-w-dynpage] [data-w-cloak] {
     color: transparent !important
 }
 
- .w-webflow-badge,
+/* .w-webflow-badge,
 .w-webflow-badge * {
     position: static;
     left: auto;
@@ -430,7 +455,7 @@ html[data-w-dynpage] [data-w-cloak] {
     visibility: visible !important;
     opacity: 1 !important;
     vertical-align: middle !important
-} 
+}  */
 
 h1,
 h2,
@@ -702,7 +727,7 @@ textarea.w-select {
     width: .1px;
     height: .1px;
     opacity: 0;
-    overflow: hidden;
+    overflow: scroll;
     position: absolute;
     z-index: -100
 }
@@ -719,12 +744,12 @@ textarea.w-select {
     margin-top: 10px
 }
 
-.w-file-upload-default.w-hidden,
+/* .w-file-upload-default.w-hidden,
 .w-file-upload-uploading.w-hidden,
 .w-file-upload-error.w-hidden,
 .w-file-upload-success.w-hidden {
     display: none
-}
+} */
 
 .w-file-upload-uploading-btn {
     display: flex;
@@ -908,22 +933,22 @@ textarea.w-select {
     width: 100%
 }
 
-.w-hidden-main {
+/* .w-hidden-main {
     display: none !important
-}
+} */
 
 @media screen and (max-width:991px) {
     .w-container {
         max-width: 728px
     }
 
-    .w-hidden-main {
+    /* .w-hidden-main {
         display: inherit !important
-    }
+    } */
 
-    .w-hidden-medium {
+    /* .w-hidden-medium {
         display: none !important
-    }
+    } */
 
     .w-col-medium-1 {
         width: 8.33333333%
@@ -1155,7 +1180,7 @@ textarea.w-select {
 }
 
 .w-widget-twitter {
-    overflow: hidden
+    overflow: scroll;
 }
 
 .w-widget-twitter-count-shim {
@@ -1294,7 +1319,7 @@ textarea.w-select {
 
 .w-background-video {
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     height: 500px;
     color: white
 }
@@ -1327,9 +1352,9 @@ textarea.w-select {
     padding: 0
 }
 
-.w-background-video--control>[hidden] {
+/* .w-background-video--control>[hidden] {
     display: none !important
-}
+} */
 
 .w-slider {
     position: relative;
@@ -1343,7 +1368,7 @@ textarea.w-select {
 .w-slider-mask {
     position: relative;
     display: block;
-    overflow: hidden;
+    overflow: scroll;
     z-index: 1;
     left: 0;
     right: 0;
@@ -1437,7 +1462,7 @@ textarea.w-select {
     left: 0;
     margin: auto;
     cursor: pointer;
-    overflow: hidden;
+    overflow:scroll;
     color: white;
     font-size: 40px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1485,7 +1510,7 @@ textarea.w-select {
     clip: rect(0 0 0 0);
     height: 1px;
     margin: -1px;
-    overflow: hidden;
+    overflow: scroll;
     padding: 0;
     position: absolute;
     width: 1px
@@ -1616,13 +1641,13 @@ textarea.w-select {
 .w-lightbox-container {
     height: 100%;
     overflow: auto;
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
 }
 
 .w-lightbox-content {
     position: relative;
     height: 100vh;
-    overflow: hidden
+    overflow: scroll;
 }
 
 .w-lightbox-view {
@@ -1685,7 +1710,7 @@ textarea.w-select {
     text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden
+    overflow: scroll;
 }
 
 .w-lightbox-embed {
@@ -1739,8 +1764,8 @@ textarea.w-select {
     padding: 0 1vh;
     line-height: 0;
     white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .w-lightbox-item {
@@ -1759,7 +1784,7 @@ textarea.w-select {
     position: relative;
     height: 10vh;
     background: #222;
-    overflow: hidden
+    overflow: scroll;
 }
 
 .w-lightbox-thumbnail-image {
@@ -1816,7 +1841,7 @@ textarea.w-select {
 }
 
 .w-lightbox-noscroll {
-    overflow: hidden
+    overflow: scroll;
 }
 
 @media (min-width:768px) {
@@ -1887,7 +1912,7 @@ textarea.w-select {
 
 .w-richtext ol,
 .w-richtext ul {
-    overflow: hidden
+    overflow: scroll;
 }
 
 .w-richtext .w-richtext-figure-selected.w-richtext-figure-type-video div:after,
@@ -2082,7 +2107,7 @@ textarea.w-select {
 
 .w-nav-overlay {
     position: absolute;
-    overflow: hidden;
+    overflow: scroll;
     display: none;
     top: 100%;
     left: 0;
@@ -2238,7 +2263,7 @@ textarea.w-select {
 .w-tab-content {
     position: relative;
     display: block;
-    overflow: hidden
+    overflow: scroll;
 }
 
 .w-tab-pane {
@@ -2532,7 +2557,7 @@ textarea.w-select {
 }
 
 .body {
-    overflow: hidden;
+    overflow: scroll;
     margin-left: -57px;
     background-color: #333;
     color: #333;
