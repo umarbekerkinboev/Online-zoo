@@ -333,9 +333,9 @@ html.w-mod-touch * {
     clear: both
 }
 
-/* .w-hidden {
+.w-hidden {
     display: none
-} */
+}
 
 .w-button {
     display: inline-block;
@@ -1074,9 +1074,16 @@ textarea.w-select {
     }
 }
 
-@media screen and (max-width:479px) {
-    .w-container {
-        max-width: none
+@media screen and (max-width:640px) {
+    .navbar-logo-left{
+        max-width: none;
+        position: fixed;
+        top: 0;
+        width: 100%
+            
+    }
+    .image{
+        margin-top: 115px;
     }
 
     .w-hidden-main {
@@ -2594,7 +2601,7 @@ textarea.w-select {
     color: #0050bd;
 }
 
-.nav-link-2.about {
+.nav-link-2.donate {
     background-color: transparent;
     color: orange;
 }
@@ -3058,7 +3065,7 @@ textarea.w-select {
     margin-right: auto;
     margin-left: auto;
     padding: 15px 20px;
-    background-color: transparent;
+    background-color: black;
 }
 
 .navbar-logo-left-container-2.shadow-three {
